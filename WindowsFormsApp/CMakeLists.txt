@@ -10,6 +10,7 @@ include(CSharpUtilities)
 add_executable(MyWinFormApp
     App.config
     Form1.cs
+	Form1.resx
     Form1.Designer.cs
     Program.cs
     Properties/AssemblyInfo.cs
@@ -29,6 +30,7 @@ set(CMAKE_CSharp_FLAGS "/langversion:latest")
 # Set the source file properties for Windows Forms use.
 csharp_set_windows_forms_properties(
     Form1.cs
+	Form1.resx
     Form1.Designer.cs
     Program.cs
     Properties/AssemblyInfo.cs
